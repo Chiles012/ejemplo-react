@@ -1,8 +1,9 @@
 // Librerias
-import { useState } from 'react';
+// import { useState } from 'react';
 
 // Componentes
-import Button from './Button';
+import Bootstrap from './Bootstrap';
+import UncontrolledExample from './Carrousel';
 
 // Estilos
 import './App.css';
@@ -12,7 +13,6 @@ function App() {
   /**
    * Estado
    * const [ valor, setValor ] = useState(valorInicial)
-   */
   const [number, setNumber] = useState(0);
   let component = null
   let componentCase = null
@@ -49,35 +49,15 @@ function App() {
       nombre: "Luis"
     }
   ]
+   */
 
   return (
     <> { /* Fragment */ }
       <h1>
-        {number}
+        bootstrap
       </h1>
-      {component}
-      {componentCase}
-      {
-        array.map((value, index) => (
-          <div
-            key={index}
-          >
-            {value.nombre}
-          </div>
-        ))
-      }
-      <Button
-        text="Incrementar"
-        event={() => setNumber(number + 1)}
-      />
-      <Button
-        text="Decrementar"
-        event={() => setNumber(number - 1)}
-      />
-      <Button
-        text="Resetear"
-        event={() => setNumber(0)}
-      />
+      <UncontrolledExample />
+      <Bootstrap/>
     </>
   );
 }
