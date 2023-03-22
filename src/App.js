@@ -7,6 +7,7 @@ import UncontrolledExample from './Carrousel';
 
 // Estilos
 import './App.css';
+import NavigationRoute from './NavigationRoute';
 
 function App() {
 
@@ -53,11 +54,14 @@ function App() {
 
   return (
     <> { /* Fragment */ }
+    {/*
       <h1>
         bootstrap
       </h1>
       <UncontrolledExample />
       <Bootstrap/>
+    */}
+    <NavigationRoute />
     </>
   );
 }
