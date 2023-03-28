@@ -5,6 +5,8 @@ function Home() {
         <>
             <h1>Hola desde Home</h1>
             <Link to='/about'>Ir about</Link>
+            <br/>
+            <Link to='/hooks'>Ir hooks</Link>
         </>
     )
 }
